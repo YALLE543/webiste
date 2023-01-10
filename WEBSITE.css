@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+  background-image: url("bg.png");
+  background-size:cover;
+  font-family:arial;
+
+  }
+a:link, a:visited {
+  color: black;
+  font-size: 20;
+  float: center;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.circular--square { border-radius: 50%; }
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+p.dotted {border-style: dotted;}
+caption{
+  font-size: 50;
+  font-family:"Courier New", monospace;
+  font-weight: bold;
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+div.container {
+  text-align: center;
+}
+
+ul.myUL {
+  display: inline-block;
+  text-align: left;
+  font-size: 20;
+}
+ol.myOL {
+  display: inline-block;
+  text-align: left;
+  font-size: 20;
+}
+
+dl.myDL {
+  display: inline-block;
+  text-align: left;
+  font-size: 20;
+}
+
+.bubbles img{
+  width: 50px;
+  animation: bubble 7s linear infinite;
+}
+.bubbles{
+  width: 100%;
+  align-items: center;
+  display: flex; justify-content: 
+  space-around; 
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes bubble{
+    0%{
+        transform: translateY(0); opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+    transform: translateY(-80vh); opacity: 0;
+    }
+}
+
+div.animation {
+  width: 5000px;
+  height: 100px;
+  background-color: lightblue;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {background-color: lightblue;}
+  to {background-color: lightpink;}
+
+}
+
+.animation{
+  font-size: 20px;
+  font-family: sans-serif;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+span{
+  display: inline-block;
+  font-weight: bolder;
+  animation: mover 6s linear infinite;
+}
+@keyframes mover{
+    0%{
+        text-shadow: 0 0 50px rgba(0,0,0,0);
+      }
+    50%{
+        text-shadow: 0 0 50px rgba(0,0,0,0.30);
+        transform: translateX(30px);
+      }
+    100%{
+        text-shadow: 0 0 50px rgba(0,0,0,0);
+ }     
